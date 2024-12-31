@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="booking.html"class="active">Termin buchen</a>
+            <a href="about.html">Über mich</a>
+            <a href="contact.html">Kontakt</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Termine buchen</h1>
+        <p>Hier kannst du einen Termin buchen.</p>
+        <form action="submit_booking.php" method="POST" class="booking-form">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Dein Name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" placeholder="Deine E-Mail-Adresse" required>
+            </div>
+            <div class="form-group">
+                <label for="date">Datum:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Uhrzeit:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <button type="submit" class="submit-btn">Termin buchen</button>
+        </form>
+    
+    </main>
+    <footer>
+        <p>&copy; 2024 Meine Webseite</p>
+    </footer>
+</body>
+</html>
